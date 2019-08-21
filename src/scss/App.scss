@@ -1,0 +1,271 @@
+@import "variables";
+#root {
+  margin: 0 auto;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.profile-header {
+  font-size: 1.5rem;
+  //   display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: $lighter;
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+  }
+
+  .greeting-col {
+    display: flex;
+    // align-items: flex-end;
+  }
+  .logo {
+    height: auto;
+    width: 125px;
+    margin-left: 4rem;
+  }
+
+  .float-right {
+    float: right;
+    width: 275px;
+    padding-top: 2.3rem;
+    // margin-right: 10%;
+
+    .link-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 2rem;
+
+      a {
+        // margin-right: 3%;
+        // text-align: right;
+        color: white;
+        @include easeOut;
+        // display: none;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+.menu {
+  background-color: $lighter !important;
+  border-radius: 0 !important;
+}
+
+.profile-header h1 {
+  font-size: 3rem;
+}
+.account {
+  margin: 1% auto;
+  width: 80%;
+  font-size: 1.7rem;
+  line-height: 4.6rem;
+}
+.account-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid $dark;
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  .flex-col {
+    display: flex;
+  }
+
+  .blue {
+    background-color: $light !important;
+  }
+
+  .red {
+    background-color: $secondary !important;
+  }
+}
+
+.myTech-header {
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+.huge {
+  margin-top: 1% !important;
+  margin-left: 10% !important;
+}
+
+.tech-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  .myTech-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .myTech-item {
+    margin: 20px;
+    box-shadow: 7px 5px 18px #333;
+
+    .button-box {
+      display: flex;
+      padding-left: 1rem;
+      justify-content: space-around;
+      padding: 1rem;
+
+      .blue {
+        background-color: $lighter !important;
+        margin: 0px 0px 3.25px 0px !important;
+      }
+
+      .red {
+        background-color: $secondary !important;
+        margin: 0px 0px 2.4px 0px !important;
+      }
+    }
+  }
+}
+
+nav {
+  margin-left: 20px;
+  margin-top: 20px;
+  border: 1px solid blue;
+}
+nav a {
+  padding: 5px;
+}
+
+.nav-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.items {
+  // margin-top: 10px;
+  // margin-left: 20px;
+  width: 80%;
+  margin: 0 auto;
+
+  h1 {
+    padding-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .item-list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: space-around;
+
+    .item-card {
+      margin: 20px;
+      box-shadow: 7px 5px 18px #333;
+      height: 480px !important;
+      display: flex;
+
+      .description-container {
+        height: 69px;
+      }
+
+      .blue {
+        background-color: $lighter !important;
+      }
+    }
+  }
+}
+
+.add-button-mytech {
+  font-size: 2rem;
+}
+.form-card {
+  width: 50%;
+  margin: 1% auto;
+}
+
+.item-page {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+.profile-footer {
+  position: relative;
+  font-size: 1rem;
+  width: 80%;
+  justify-content: space-between;
+  margin: 3.5% auto;
+  border-top: 1px solid black;
+  text-align: center;
+
+  .footer-nav {
+    color: black;
+    margin: 3% 2%;
+  }
+}
+
+.login-card {
+  position: absolute;
+  margin: auto;
+  color: white !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: #333 !important;
+
+  box-shadow: 5px 1px 20px #111 !important;
+
+  .form-container {
+    width: 700px;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  label {
+    color: white !important;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+
+    .logo {
+      height: auto;
+      width: 150px;
+      // margin: 1.5rem;
+    }
+  }
+}
+
+.item-card {
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.myTech-item {
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
